@@ -1,0 +1,27 @@
+.navbar{
+    width: 100%;
+    height: 40px;
+    background-color: #262c3b;
+    display: flex;
+    align-items: center;
+    font-family: "Amazon Ember", Arial, sans-serif;
+
+}
+.navbar__left{
+display: flex;
+align-items: center;
+color: white;
+font-size: 14px;
+font-weight: 700;
+margin-left: 10px;
+margin-right: 6px;
+}
+
+a{
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: white;
+    
+}
