@@ -16,6 +16,9 @@ font-weight: 700;
 margin-left: 10px;
 margin-right: 6px;
 }
+/* .navbar__right{
+    overflow-x: hidden;
+} */
 
 a{
     font-size: 15px;

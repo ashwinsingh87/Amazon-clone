@@ -11,7 +11,7 @@ function Checkout() {
       <div className="checkout">
         <div className="checkout__left">
           <div>
-            <h2 className="checkout__title">Your Shopping Basket</h2>
+            <h2 className="checkout__title">Shopping Cart</h2>
             {/* BasketItem */}
             {/* BasketItem */}
             {/* BasketItem */}

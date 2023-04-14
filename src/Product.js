@@ -2,7 +2,9 @@ import React from "react";
 import "./Product.css";
 
 function Product({ title, image, price, rating }) {
+ 
   return (
+
     <div className="product">
       <div className="product__info">
         <p>{title}</p>
@@ -21,6 +23,7 @@ function Product({ title, image, price, rating }) {
       <img src={image} alt="" />
       <button>Add to Basket</button>
     </div>
+    
   );
 }
 

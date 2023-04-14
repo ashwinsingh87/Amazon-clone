@@ -9,6 +9,7 @@ function Navbar() {
         <MenuIcon/>
         <p>All</p>
        </div>
+       <div className='navbar__right'>
        <a href="#home" >Sell</a> 
        <a href="#home" >Best Seller</a> 
        <a href="#home" >Today's Deals</a> 
@@ -23,6 +24,7 @@ function Navbar() {
        <a href="#home" >Computers</a> 
        <a href="#home" >Amazon Pay</a> 
        <a href="#home" >Coupons</a> 
+    </div>
     </div>
   )
 }
