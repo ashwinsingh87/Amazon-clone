@@ -1,0 +1,7 @@
+.checkoutlist{
+    display: flex;
+    padding: 10px;
+}
+.checkoutlist__rating{
+    display: flex;
+}

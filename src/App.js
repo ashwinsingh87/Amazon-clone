@@ -1,10 +1,10 @@
 import "./App.css";
 // import Header from "./Header";
-import Home from "./Home";
+import Home from "./Home/Home";
 // import Navbar from "./Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Navbar from "./Navbar";
-import Checkout from "./Checkout";
+import Checkout from "./Checkout/Checkout";
 
 function App() {
   return (
