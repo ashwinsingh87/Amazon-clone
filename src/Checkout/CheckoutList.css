@@ -1,7 +1,30 @@
-.checkoutlist{
-    display: flex;
-    padding: 10px;
+.checkoutlist {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.checkoutlist__rating{
-    display: flex;
+.checkoutlist__info {
+  padding-left: 20px;
+}
+.checkoutlist__image {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+.checkoutlist__rating {
+  display: flex;
+}
+.checkoutlist__title {
+  font-size: 17px;
+  font-weight: 800;
+}
+.checkoutlist__button {
+  background: #f0c14b;
+  border-radius: 5px;
+  padding: 0.2rem;
+  border: 1px solid;
+  cursor: pointer;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
 }
