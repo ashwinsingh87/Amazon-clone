@@ -1,42 +1,49 @@
-[debug] [2023-04-28T07:39:32.767Z] ----------------------------------------------------------------------
-[debug] [2023-04-28T07:39:32.770Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
-[debug] [2023-04-28T07:39:32.771Z] CLI Version:   11.28.0
-[debug] [2023-04-28T07:39:32.771Z] Platform:      linux
-[debug] [2023-04-28T07:39:32.771Z] Node Version:  v16.18.0
-[debug] [2023-04-28T07:39:32.772Z] Time:          Fri Apr 28 2023 13:09:32 GMT+0530 (India Standard Time)
-[debug] [2023-04-28T07:39:32.773Z] ----------------------------------------------------------------------
+[debug] [2023-04-28T08:38:35.774Z] ----------------------------------------------------------------------
+[debug] [2023-04-28T08:38:35.778Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2023-04-28T08:38:35.778Z] CLI Version:   11.29.1
+[debug] [2023-04-28T08:38:35.779Z] Platform:      linux
+[debug] [2023-04-28T08:38:35.779Z] Node Version:  v16.18.0
+[debug] [2023-04-28T08:38:35.780Z] Time:          Fri Apr 28 2023 14:08:35 GMT+0530 (India Standard Time)
+[debug] [2023-04-28T08:38:35.780Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-04-28T07:39:32.931Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-04-28T07:39:32.932Z] > authorizing via signed-in user (rajputashwin87@gmail.com)
-[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2023-04-28T07:39:32.944Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-04-28T07:39:32.945Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2023-04-28T07:39:32.964Z] [hub] writing locator at /tmp/hub-clone-96f16.json
-[debug] [2023-04-28T07:39:32.986Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-04-28T07:39:32.987Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-04-28T07:39:32.988Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
-[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
-[debug] [2023-04-28T07:39:33.009Z] defaultcredentials: writing to file /home/ashwin/.config/firebase/rajputashwin87_gmail_com_application_default_credentials.json
-[debug] [2023-04-28T07:39:33.080Z] Setting GAC to /home/ashwin/.config/firebase/rajputashwin87_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/ashwin/.config/firebase/rajputashwin87_gmail_com_application_default_credentials.json"}}
-[debug] [2023-04-28T07:39:33.091Z] > refreshing access token with scopes: []
-[debug] [2023-04-28T07:39:33.097Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2023-04-28T07:39:33.098Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2023-04-28T07:39:33.360Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2023-04-28T07:39:33.362Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2023-04-28T07:39:33.373Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16/adminSdkConfig [none]
-[debug] [2023-04-28T07:39:33.947Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16/adminSdkConfig 200
-[debug] [2023-04-28T07:39:33.948Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16/adminSdkConfig {"projectId":"clone-96f16","storageBucket":"clone-96f16.appspot.com"}
-[debug] [2023-04-28T07:39:34.007Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2023-04-28T07:39:34.008Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2023-04-28T07:39:34.009Z] Starting Emulator UI with command {"binary":"node","args":["/home/ashwin/.cache/firebase/emulators/ui-v1.11.5/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/ashwin/.cache/firebase/emulators/ui-v1.11.5/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[debug] [2023-04-28T08:38:35.944Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-28T08:38:35.945Z] > authorizing via signed-in user (rajputashwin87@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-04-28T08:38:35.957Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-28T08:38:35.958Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-28T08:38:35.958Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-04-28T08:38:35.977Z] [hub] writing locator at /tmp/hub-clone-96f16.json
+[debug] [2023-04-28T08:38:36.005Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-28T08:38:36.014Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-28T08:38:36.015Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-04-28T08:38:36.065Z] defaultcredentials: writing to file /home/ashwin/.config/firebase/rajputashwin87_gmail_com_application_default_credentials.json
+[debug] [2023-04-28T08:38:36.119Z] Setting GAC to /home/ashwin/.config/firebase/rajputashwin87_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/ashwin/.config/firebase/rajputashwin87_gmail_com_application_default_credentials.json"}}
+[debug] [2023-04-28T08:38:36.125Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16/adminSdkConfig [none]
+[debug] [2023-04-28T08:38:36.975Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16/adminSdkConfig 200
+[debug] [2023-04-28T08:38:36.975Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16/adminSdkConfig {"projectId":"clone-96f16","storageBucket":"clone-96f16.appspot.com"}
+[debug] [2023-04-28T08:38:37.000Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-96f16/sites 
+[debug] [2023-04-28T08:38:38.461Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-96f16/sites 200
+[debug] [2023-04-28T08:38:38.462Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-96f16/sites {"sites":[{"name":"projects/clone-96f16/sites/clone-96f16","defaultUrl":"https://clone-96f16.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-28T08:38:38.462Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16/webApps/-/config [none]
+[debug] [2023-04-28T08:38:39.723Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16/webApps/-/config 200
+[debug] [2023-04-28T08:38:39.723Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16/webApps/-/config {"projectId":"clone-96f16","appId":"1:954505006586:web:725f921cbbce3f6ec26843","storageBucket":"clone-96f16.appspot.com","apiKey":"AIzaSyAXLdlcoaUEHcYpQcoExwnXC2xMbpsQ-Cg","authDomain":"clone-96f16.firebaseapp.com","messagingSenderId":"954505006586","measurementId":"G-7D4S99S10Y"}
+[debug] [2023-04-28T08:38:39.728Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16 [none]
+[debug] [2023-04-28T08:38:40.299Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16 200
+[debug] [2023-04-28T08:38:40.300Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-96f16 {"projectId":"clone-96f16","projectNumber":"954505006586","displayName":"Amazon-clone","name":"projects/clone-96f16","resources":{"hostingSite":"clone-96f16"},"state":"ACTIVE","etag":"1_594de127-9d15-47fa-9ec4-41878eb0e9ff"}
+[info] i  hosting[clone-96f16]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting[clone-96f16]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-04-28T08:38:40.340Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-04-28T08:38:40.341Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-04-28T08:38:40.341Z] Starting Emulator UI with command {"binary":"node","args":["/home/ashwin/.cache/firebase/emulators/ui-v1.11.5/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/ashwin/.cache/firebase/emulators/ui-v1.11.5/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2023-04-28T07:39:34.328Z] Web / API server started at 127.0.0.1:4000
+[debug] [2023-04-28T08:38:40.676Z] Web / API server started at 127.0.0.1:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
-[debug] [2023-04-28T07:39:34.329Z] Web / API server started at ::1:4000
+[debug] [2023-04-28T08:38:40.677Z] Web / API server started at ::1:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
 [info] i  functions: Watching "/home/ashwin/Desktop/amazon-clone/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/ashwin/Desktop/amazon-clone/functions\" for Cloud Functions..."}}
-[debug] [2023-04-28T07:39:34.559Z] Validating nodejs source
-[debug] [2023-04-28T07:39:35.868Z] > [functions] package.json contents: {
+[debug] [2023-04-28T08:38:40.891Z] Validating nodejs source
+[debug] [2023-04-28T08:38:42.057Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -65,18 +72,20 @@
   },
   "private": true
 }
-[debug] [2023-04-28T07:39:35.868Z] Building nodejs source
-[debug] [2023-04-28T07:39:35.869Z] Failed to find version of module node: reached end of search path /home/ashwin/Desktop/amazon-clone/functions/node_modules
+[debug] [2023-04-28T08:38:42.058Z] Building nodejs source
+[debug] [2023-04-28T08:38:42.059Z] Failed to find version of module node: reached end of search path /home/ashwin/Desktop/amazon-clone/functions/node_modules
 [info] ✔  functions: Using node@16 from host. 
-[debug] [2023-04-28T07:39:35.875Z] Could not find functions.yaml. Must use http discovery
-[debug] [2023-04-28T07:39:35.887Z] Found firebase-functions binary at '/home/ashwin/Desktop/amazon-clone/functions/node_modules/.bin/firebase-functions'
-[debug] [2023-04-28T07:39:36.437Z] Serving at port 8479
+[debug] [2023-04-28T08:38:42.064Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-04-28T08:38:42.074Z] Found firebase-functions binary at '/home/ashwin/Desktop/amazon-clone/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-04-28T08:38:42.766Z] Serving at port 8792
 
-[debug] [2023-04-28T07:39:37.057Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[debug] [2023-04-28T07:39:37.073Z] shutdown requested via /__/quitquitquit
+[debug] [2023-04-28T08:38:43.527Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'
+[debug] [2023-04-28T08:38:43.540Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token 'export'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token 'export'\n                                         ^"}
+[debug] [2023-04-28T08:38:43.551Z] shutdown requested via /__/quitquitquit
 
-[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
-[info] ✔  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-96f16/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-96f16/us-central1/api)."}}
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'"}}
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
 │ ✔  All emulators ready! It is now safe to connect your app. │
@@ -87,39 +96,236 @@
 │ Emulator  │ Host:Port      │ View in Emulator UI             │
 ├───────────┼────────────────┼─────────────────────────────────┤
 │ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
 └───────────┴────────────────┴─────────────────────────────────┘
   Emulator Hub running at 127.0.0.1:4400
   Other reserved ports: 4500
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[debug] [2023-04-28T07:39:56.200Z] [work-queue] {"queuedWork":["/clone-96f16/us-central1/api-2023-04-28T07:39:56.200Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
-[debug] [2023-04-28T07:39:56.202Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-96f16/us-central1/api-2023-04-28T07:39:56.200Z"],"workRunningCount":1}
-[debug] [2023-04-28T07:39:56.203Z] Accepted request GET /clone-96f16/us-central1/api --> us-central1-api
-[debug] [2023-04-28T07:39:56.208Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
-[debug] [2023-04-28T07:39:56.210Z] [functions] Got req.url=/clone-96f16/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-96f16/us-central1/api, mapping to path=/"}}
-[debug] [2023-04-28T07:39:56.235Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
-[debug] [2023-04-28T07:39:56.237Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
-[debug] [2023-04-28T07:39:58.495Z] [runtime-status] [6416] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.7.0","resolution":"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.7.0\",\"resolution\":\"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2023-04-28T07:39:58.499Z] [runtime-status] [6416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2023-04-28T07:39:58.499Z] [runtime-status] [6416] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
-[debug] [2023-04-28T07:39:58.505Z] [runtime-status] [6416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2023-04-28T07:39:58.872Z] [runtime-status] [6416] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] Checked functions.config() {\"config\":{}}"}}
-[debug] [2023-04-28T07:39:58.873Z] [runtime-status] [6416] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
-[debug] [2023-04-28T07:39:58.877Z] [runtime-status] [6416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2023-04-28T07:39:58.878Z] [runtime-status] [6416] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.7.0","resolution":"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.7.0\",\"resolution\":\"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
-[debug] [2023-04-28T07:39:58.883Z] [runtime-status] [6416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.3.1","resolution":"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.3.1\",\"resolution\":\"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
-[debug] [2023-04-28T07:39:58.884Z] [runtime-status] [6416] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.7.0","resolution":"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.7.0\",\"resolution\":\"/home/ashwin/Desktop/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
-[debug] [2023-04-28T07:39:59.120Z] [runtime-status] [6416] Functions runtime initialized. {"cwd":"/home/ashwin/Desktop/amazon-clone/functions","node_version":"16.18.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] Functions runtime initialized. {\"cwd\":\"/home/ashwin/Desktop/amazon-clone/functions\",\"node_version\":\"16.18.0\"}"}}
-[debug] [2023-04-28T07:39:59.120Z] [runtime-status] [6416] Listening to port: /tmp/fire_emu_82d831b9869e7818.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6416] Listening to port: /tmp/fire_emu_82d831b9869e7818.sock"}}
-[debug] [2023-04-28T07:39:59.200Z] [worker-us-central1-api-15c66b0e-e84c-475b-b1f9-28792dc7c0d2]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-15c66b0e-e84c-475b-b1f9-28792dc7c0d2]: IDLE"}}
-[debug] [2023-04-28T07:39:59.201Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
-[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
-[debug] [2023-04-28T07:39:59.203Z] [worker-us-central1-api-15c66b0e-e84c-475b-b1f9-28792dc7c0d2]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-15c66b0e-e84c-475b-b1f9-28792dc7c0d2]: BUSY"}}
-[error] i  Your function timed out after ~60s. To configure this timeout, see
-      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Your function timed out after ~60s. To configure this timeout, see\n      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation."}}
-[error] i  Request to function failed: Error: socket hang up {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Request to function failed: Error: socket hang up"}}
-[debug] [2023-04-28T07:40:59.257Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
-[debug] [2023-04-28T07:40:59.281Z] [worker-us-central1-api-15c66b0e-e84c-475b-b1f9-28792dc7c0d2]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-15c66b0e-e84c-475b-b1f9-28792dc7c0d2]: exited"}}
-[debug] [2023-04-28T07:40:59.282Z] [worker-us-central1-api-15c66b0e-e84c-475b-b1f9-28792dc7c0d2]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-15c66b0e-e84c-475b-b1f9-28792dc7c0d2]: FINISHED"}}
-[debug] [2023-04-28T07:41:00.066Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-04-28T08:43:02.592Z] File /home/ashwin/Desktop/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/ashwin/Desktop/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2023-04-28T08:43:03.593Z] Validating nodejs source
+[debug] [2023-04-28T08:43:04.919Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0",
+    "stripe": "^12.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-04-28T08:43:04.924Z] Building nodejs source
+[debug] [2023-04-28T08:43:04.925Z] Failed to find version of module node: reached end of search path /home/ashwin/Desktop/amazon-clone/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-04-28T08:43:04.930Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-04-28T08:43:04.936Z] Found firebase-functions binary at '/home/ashwin/Desktop/amazon-clone/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-04-28T08:43:05.488Z] Serving at port 8817
+
+[debug] [2023-04-28T08:43:05.524Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'
+[debug] [2023-04-28T08:43:05.525Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token 'export'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token 'export'\n                                         ^"}
+[debug] [2023-04-28T08:43:05.545Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'"}}
+[debug] [2023-04-28T08:43:10.305Z] File /home/ashwin/Desktop/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/ashwin/Desktop/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2023-04-28T08:43:11.307Z] Validating nodejs source
+[debug] [2023-04-28T08:43:12.330Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0",
+    "stripe": "^12.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-04-28T08:43:12.331Z] Building nodejs source
+[debug] [2023-04-28T08:43:12.331Z] Failed to find version of module node: reached end of search path /home/ashwin/Desktop/amazon-clone/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-04-28T08:43:12.338Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-04-28T08:43:12.342Z] Found firebase-functions binary at '/home/ashwin/Desktop/amazon-clone/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-04-28T08:43:12.870Z] Serving at port 8541
+
+[debug] [2023-04-28T08:43:13.454Z] File /home/ashwin/Desktop/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/ashwin/Desktop/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2023-04-28T08:43:13.523Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'
+[debug] [2023-04-28T08:43:13.524Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token 'export'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token 'export'\n                                         ^"}
+[debug] [2023-04-28T08:43:13.534Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'"}}
+[debug] [2023-04-28T08:43:14.456Z] Validating nodejs source
+[debug] [2023-04-28T08:43:15.563Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0",
+    "stripe": "^12.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-04-28T08:43:15.563Z] Building nodejs source
+[debug] [2023-04-28T08:43:15.564Z] Failed to find version of module node: reached end of search path /home/ashwin/Desktop/amazon-clone/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-04-28T08:43:15.566Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-04-28T08:43:15.569Z] Found firebase-functions binary at '/home/ashwin/Desktop/amazon-clone/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-04-28T08:43:15.866Z] Serving at port 8189
+
+[debug] [2023-04-28T08:43:15.888Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'
+[debug] [2023-04-28T08:43:15.889Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token 'export'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token 'export'\n                                         ^"}
+[debug] [2023-04-28T08:43:15.895Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'"}}
+[debug] [2023-04-28T08:43:22.870Z] File /home/ashwin/Desktop/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/ashwin/Desktop/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2023-04-28T08:43:23.872Z] Validating nodejs source
+[debug] [2023-04-28T08:43:24.892Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0",
+    "stripe": "^12.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-04-28T08:43:24.893Z] Building nodejs source
+[debug] [2023-04-28T08:43:24.893Z] Failed to find version of module node: reached end of search path /home/ashwin/Desktop/amazon-clone/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-04-28T08:43:24.896Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-04-28T08:43:24.898Z] Found firebase-functions binary at '/home/ashwin/Desktop/amazon-clone/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-04-28T08:43:24.959Z] File /home/ashwin/Desktop/amazon-clone/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/ashwin/Desktop/amazon-clone/functions/index.js changed, reloading triggers"}}
+[debug] [2023-04-28T08:43:25.269Z] Serving at port 8986
+
+[debug] [2023-04-28T08:43:25.642Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'
+[debug] [2023-04-28T08:43:25.643Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token 'export'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token 'export'\n                                         ^"}
+[debug] [2023-04-28T08:43:25.651Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'"}}
+[debug] [2023-04-28T08:43:25.960Z] Validating nodejs source
+[debug] [2023-04-28T08:43:26.786Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "firebase-functions": "^4.2.0",
+    "stripe": "^12.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}
+[debug] [2023-04-28T08:43:26.786Z] Building nodejs source
+[debug] [2023-04-28T08:43:26.787Z] Failed to find version of module node: reached end of search path /home/ashwin/Desktop/amazon-clone/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-04-28T08:43:26.789Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-04-28T08:43:26.792Z] Found firebase-functions binary at '/home/ashwin/Desktop/amazon-clone/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-04-28T08:43:27.202Z] Serving at port 8644
+
+[debug] [2023-04-28T08:43:27.771Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'
+[debug] [2023-04-28T08:43:27.772Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token 'export'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token 'export'\n                                         ^"}
+[debug] [2023-04-28T08:43:27.780Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token 'export'"}}
