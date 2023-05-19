@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./Payment.css";
 import Header from "../Navbar/Header";
 import CheckoutList from "../Checkout/CheckoutList";
@@ -6,38 +6,82 @@ import { useStateValue } from "../StateProvider";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import { getBasketTotal } from "../reducer";
 import axios from "./axios";
+import { useNavigate } from "react-router-dom"
+// import { db } from "../Firebase";
+// import { doc, setDoc, collection } from "firebase/firestore";
+
 
 const Payment = () => {
-  const [{ basket }] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
+  const navigate = useNavigate();
   const value = getBasketTotal(basket);
   const [error, setError] = useState(null);
-  const [disabled, setDisabled] = useState(true);
+  const [disabled, setDisabled] = useState(false);
   const [processing, setProcessing] = useState("");
   const [succeeded, setSucceeded] = useState(false);
   const [clientSecret, setClientSecret] = useState(true);
+
   const stripe = useStripe();
-  const element = useElements();
+  const elements = useElements();
 
-  useEffect(()=>{
-    const getClientSecret = async()=>{
+  useEffect(() => {
+    const getClientSecret = async () => {
       const response = await axios({
-        method:"post", 
-        url:`/payment/create?total=${getBasketTotal(basket)*100}`
-      })
+        method: 'post',
+        url: `/payments/create?total=${getBasketTotal(basket) * 100}`
+      },)
+      setClientSecret(response.data.clientSecret)
     }
-  },[])
+    getClientSecret()
+  }, [basket])
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  console.log("THE SECRET IS >>>>>", clientSecret)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setProcessing(true);
+    const payload = await stripe.confirmCardPayment(clientSecret, {
+      payment_method: {
+        card: elements.getElement(CardElement),
+      }
+    }).then(( paymentIntent ) => {
+      // console.log(paymentIntent)
+
+      // if (user && user.uid && paymentIntent) {
+      //   setDoc(doc(collection(db, 'user', user.uid, 'orders'), paymentIntent), {
+      //     basket: basket,
+      //     amount: paymentIntent.amount,
+      //     created: paymentIntent.created
+      //   });
+      // } else {
+      //   console.log("User or paymentIntent is undefined or null");
+      // }
+      console.log("inside paymentIntent")
+      setSucceeded(true);
+      setError(null);
+      setProcessing(false);
+      
+      dispatch({
+        type: 'ORDERS',
+        item: {
+          basket
+        }
+      })
+      navigate("/orders");
+      // dispatch({
+      //   type: 'EMPTY__BASKET',
+      // })
+    }
+    )
   };
-  const handleChange = (event) => {
+  const handleChange = event => {
     setDisabled(event.empty);
     setError(event.error ? event.error.message : "");
   };
   return (
     <>
       <Header />
+
       <div className="payment">
         <h1>Checkout ({basket.length} items)</h1>
         <div className="payment__container">
@@ -72,12 +116,11 @@ const Payment = () => {
                 <CardElement onChange={handleChange} />
 
                 <div className="payment__priceContainer">
-                  <strong>${value}.00</strong>
-                  <button disabled={processing || disabled || succeeded }>
-                    <span>{processing ? "Processing" : "Buy Now"} </span>
-                  </button>
+                  <strong>Order Total: ${value}.00</strong>
                 </div>
-
+                <button type="submit" disabled={disabled || processing || succeeded}>
+                  <span>{processing ? "Processing" : "Buy Now"} </span>
+                </button>
                 {error && <div>{error}</div>}
               </form>
             </div>

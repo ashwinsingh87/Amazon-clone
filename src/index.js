@@ -4,18 +4,21 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import reducer, { initialState } from "./reducer";
-import {StateProvider} from "./StateProvider"
+import { StateProvider } from "./StateProvider"
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 
+const promise = loadStripe("pk_test_51N8IvZSCiG7V11qJHhFbgwcm5Gvt29vKsCFhG6J55xNiV8jbPeCahgp5wfNYjRdvj3DWZ7wDqeZkXTiH4H904UQ000t9UTAjRh")
+// console.log(promise)
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <StateProvider initialState={initialState} reducer={reducer}>
-      <App />
-    </StateProvider>
+    <Elements stripe={promise}>
+      <StateProvider initialState={initialState} reducer={reducer}>
+        <App />
+      </StateProvider>
+    </Elements>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

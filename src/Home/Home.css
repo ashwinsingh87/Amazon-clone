@@ -1,15 +1,21 @@
-.home{
+.home {
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     max-width: 1500px;
-
+    min-height: 100vh;
+    margin-top: 60px;
+    padding-top: 20px;
     font-family: "Amazon Ember", Arial, sans-serif;
 }
-.home__row{
-    display: flex;
+
+.home__row {
+    display: flex ;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
     z-index: 1;
+    /* width: 400px; */
     font-size: 14px;
     font-weight: 500;
     margin-left: 5px;
@@ -17,7 +23,9 @@
 }
 .home__image {
     width: 100%;
+    /* min-height: 20rem; */
     z-index: -1;
     margin-bottom: -300px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 9), rgba(0, 0, 0, 1));
+   
 }
